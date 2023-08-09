@@ -16,15 +16,7 @@ setup(
         CUDAExtension('clustenqk_cuda', [
             'clustenqk_cuda.cpp',
             'clustenqk_cuda_kernel.cu',
-        ])""",
-        CUDAExtension('clustenav_cuda', [
-            'clustenav_cuda.cpp',
-            'clustenav_cuda_kernel.cu',
-        ]),
-        CUDAExtension('clustenwf_cuda', [
-            'clustenwf_cuda.cpp',
-            'clustenwf_cuda_kernel.cu',
-        ]),"""
+        ])
     ],
     cmdclass={
         'build_ext': BuildExtension
